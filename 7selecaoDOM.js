@@ -8,4 +8,4 @@
     const lista = document.querySelector(".listaOrd");
 
     let primeiroItem = lista.firstElementChild;
-    console.log(primeiroItem.innerHTML)
+    console.log(primeiroItem.innerHTML);
