@@ -6,7 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manipulacao de elementos no DOM</title>
 </head>
+<style> 
+.ativo{
+    display:block;
+}
+
+.inativo{
+    display:none;
+}
+</style>
 <body>
+    <div class="inativo"id="menu">
+        <p>este é o menu</p>
+    </div>
     
 </body>
 </html>
@@ -21,6 +33,9 @@
     // div.appendChild(h1)
     // document.body.appendChild(div);
 
-    
+    //Topico 2:
+        let menu = document.getElementById("menu");
+
+       menu = menu.classList.toggle("ativo")
 
 </script>
