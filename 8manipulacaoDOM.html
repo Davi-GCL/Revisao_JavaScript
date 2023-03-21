@@ -19,7 +19,7 @@
     <div class="inativo"id="menu">
         <p>este é o menu</p>
     </div>
-    
+    <button onclick="ativaMenu()">Ativa menu</button>
 </body>
 </html>
 <script>
@@ -36,6 +36,9 @@
     //Topico 2:
         let menu = document.getElementById("menu");
 
-       menu = menu.classList.toggle("ativo")
+        function ativaMenu(){
+            menu.classList = "ativo"
+        }
 
+        
 </script>
