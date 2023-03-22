@@ -19,7 +19,14 @@
     <div class="inativo"id="menu">
         <p>este é o menu</p>
     </div>
-    <button onclick="ativaMenu()">Ativa menu</button>
+    <button onclick="ativaMenu()">Ativa Menu</button>
+    
+    <ol id="lista">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ol>
 </body>
 </html>
 <script>
@@ -37,8 +44,17 @@
         let menu = document.getElementById("menu");
 
         function ativaMenu(){
-            menu.classList = "ativo"
+            
+            menu.classList = menu.classList == "inativo"? "ativo" : "inativo";
+            
         }
 
-        
+    //Topico 8:
+        // const ol = document.getElementById("lista");
+
+        // let li = document.createElement("li");
+        // li.innerHTML = "Item 5";
+
+        // ol.appendChild(li);
+
 </script>
