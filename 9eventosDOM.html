@@ -23,17 +23,22 @@
 </html>
 <script>
 //Topico 1:
-    // const btn = document.getElementById("botao");
+    const btn = document.getElementById("botao");
 
-    // btn.addEventListener("click", () => {
-    //     alert("Botão clicado!!!")
-    // });
+    btn.addEventListener("click", () => {
+        alert("Botão clicado!!!")
+    });
 
-//Topico 2:
-    // const item = document.querySelector(".item");
+//Topico 2 e 3:
+    const item = document.querySelector(".item");
+    const cor_inicial = item.style.backgroundColor;
 
-    // item.addEventListener("mouseover", () => {
-    //     item.style.backgroundColor = "lightgrey";
-    // });
+    item.addEventListener("mouseover", () => {
+        item.style.backgroundColor = "lightgrey";
+    });
 
+    item.addEventListener("mouseout", () => {
+        item.style.backgroundColor = cor_inicial;
+    })
+    
 </script>
